@@ -146,6 +146,7 @@ type ChatCompletionRequest struct {
 	N                 int                      `json:"n,omitempty"`
 	ResponseFormat    *ResponseFormat          `json:"response_format,omitempty"`
 	ServiceTier       *string                  `json:"service_tier,omitempty"`
+	Thinking          *Thinking                `json:"thinking,omitempty"`
 }
 
 func (r ChatCompletionRequest) MarshalJSON() ([]byte, error) {
